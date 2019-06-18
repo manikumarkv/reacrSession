@@ -1,10 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import AppHeader from './AppHeader';
 import AppFooter from './AppFooter';
 import AppContent from './AppContent';
 import AppNavBar from './AppNavBar'
 import './App.css';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 function App(props) {
 
@@ -25,7 +26,6 @@ function App(props) {
   return (
     <div className="App">
       <AppHeader
-      myevent={this.hitme}
         vvvv={'mani'}
         userName={user.personalDetails.name}
         phNo={user.contactDetails.ph}></AppHeader>
