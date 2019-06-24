@@ -1,7 +1,7 @@
 import React from "react";
 
 
-class User extends React.Component {
+class UserDetails extends React.Component {
 
     constructor(props) {
         super(props)
@@ -19,20 +19,13 @@ class User extends React.Component {
     render() {
         console.log('render')
         //const s = this.props.match
-        const UserDetails =this.props.children 
-        let params = new URLSearchParams(this.props.location.search);
-
-        const x = params.get('searchStr')
-        console.log(UserDetails)
         return (
             <div>
-                User name is : {this.props.name}
-                <button onClick={this.props.clickme}>onclick</button>
-               {/* <UserDetails></UserDetails> */}
-               {this.props.children}
+               Address is :'something'
+               ph no: ''
             </div>
         );
     }
 }
 
-export default User;
+export default UserDetails;

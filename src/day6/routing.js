@@ -26,7 +26,7 @@ class Routing extends React.Component {
                         <Route path="/contact" component={ContactUs} />
                         <Route exact path="/" component={Home} />
                         <Route exact path="/users" component={Users} />
-                        <Route exact path="/users/:qwqw" component={User} />
+                        <Route exact path="/users/:qwqw/:url" component={User} />
                         <Route component={NotFound} />
                     </Switch>
                 </div>

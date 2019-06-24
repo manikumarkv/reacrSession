@@ -1,4 +1,6 @@
 import React from "react";
+import UserDetails from './userDetails'
+import User from "./User";
 
 
 class Home extends React.Component {
@@ -6,6 +8,16 @@ class Home extends React.Component {
     return (
       <div>
         Home Page
+        {/* <User
+          myform={UserDetails}
+          name={'react'}
+          clickme={this.hitme}></User> */}
+
+        <User name={'react'}
+          clickme={this.hitme}>
+          <UserDetails></UserDetails>
+        </User>
+
       </div>
     );
   }
