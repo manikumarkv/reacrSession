@@ -70,3 +70,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 # Routing
 https://codeburst.io/getting-started-with-react-router-5c978f70df91
+
+
+## Day 6
+
+Layout Design
+
+Url Params

@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Routing from './day6/routing';
+// import App from './day7/App';
+import Routing from './day7/routing';
 
 ReactDOM.render(<Routing/>, document.getElementById('root'));
 
