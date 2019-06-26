@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 // import './index.css';
 import * as serviceWorker from './serviceWorker';
 // import App from './day7/App';
-import Routing from './day7/routing';
+import Routing from './day8/Routing';
+import AppMani from './day8/AppMani';
 
 ReactDOM.render(<Routing/>, document.getElementById('root'));
 
