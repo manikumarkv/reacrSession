@@ -9,10 +9,7 @@ class Routing extends React.Component {
     render() {
         return (
             <Router>
-
-                <Route path="/aboutme" render={()=> {
-
-                    
+                <Route path="/aboutme" render={()=> {                    
                     return <AppLayout>
                         <AppAbout></AppAbout>
                     </AppLayout>
