@@ -3,6 +3,8 @@ import axios from 'axios';
 import "./home.css"
 import Component1 from './Component1';
 import Component2 from './Component2';
+import PropTypes from 'prop-types';
+import { StringDecoder } from 'string_decoder';
 
 class AppMainComponent extends React.Component {
     constructor(props) {
@@ -32,10 +34,11 @@ class AppMainComponent extends React.Component {
                         <Component1
                             data={this.state.parentData}
                             getDatafromChild={this.getDatafromChild}></Component1>
-                        <Component2                            
+                        <Component2
                             data={this.state.parentData}
                             getDatafromChild={this.getDatafromChild}
                         ></Component2>
+                        {this.props.user}
                     </div>
                 </div>
 
@@ -44,3 +47,11 @@ class AppMainComponent extends React.Component {
 }
 
 export default AppMainComponent
+AppMainComponent.propTypes = {
+    // user: PropTypes.object,
+    user: PropTypes.string.isRequired
+}
+
+AppMainComponent.defaultProps = {
+    user: 'Stranger'
+};

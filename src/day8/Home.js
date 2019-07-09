@@ -16,3 +16,7 @@ class AppHome extends React.Component {
 }
 
 export default AppHome
+// AppHome.propTypes = {
+//     user: PropTypes.object,
+//     user: PropTypes.object.isRequired
+// }

@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 class AppMani extends React.Component {
     constructor(props) {
@@ -37,3 +38,8 @@ class AppMani extends React.Component {
 }
 
 export default AppMani
+
+// AppMani.propTypes = {
+//     user: PropTypes.object,
+//     user: PropTypes.object.isRequired
+// }
